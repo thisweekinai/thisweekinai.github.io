@@ -1,0 +1,37 @@
+---
+layout: page
+title: AI Terms Directory
+subtitle: Swipe to learn AI concepts
+---
+<script src="{{ '/assets/js/flashcards.js' | relative_url }}" defer></script>
+<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+
+<div class="tinder-container">
+  <div class="tinder-cards" id="tinder-cards">
+    {% assign terms = "Artificial Intelligence (AI),Machine Learning (ML),Deep Learning,Neural Networks,Natural Language Processing (NLP),Large Language Models (LLMs),Training Data,Bias in AI,Computer Vision,Chatbots,Reinforcement Learning,Generative AI,Overfitting,Underfitting" | split: "," %}
+    
+    {% for term in terms reversed %}
+    <div class="tinder-card" data-term="{{ term | strip }}">
+      <div class="card-content">
+        <h3>{{ term | strip }}</h3>
+        <div class="card-description">
+          <p class="definition">{% case term | strip %}
+            {% when 'Artificial Intelligence (AI)' %}AI is when computers try to think like humans.
+            {% when 'Machine Learning (ML)' %}A type of AI where computers learn from experience.
+            <!-- Add other cases here -->
+          {% endcase %}</p>
+          <p class="eli5">{% case term | strip %}
+            {% when 'Artificial Intelligence (AI)' %}Imagine a robot that can learn, talk, and make decisions—just like a person!
+            {% when 'Machine Learning (ML)' %}Think of how you learn to ride a bike. The more you practice, the better you get!
+            <!-- Add other cases here -->
+          {% endcase %}</p>
+        </div>
+      </div>
+      <div class="swipe-hint">
+        <div class="hint-left">← Needs Improvement</div>
+        <div class="hint-right">Understood →</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
