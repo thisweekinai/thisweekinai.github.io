@@ -1,0 +1,20 @@
+---
+layout: null
+---
+
+/* TO BE MOVED TO A CUSTOM CSS FILE: HASIME */
+.card {
+    border-radius: 40px;
+    background-color: {{ site.navbar-col }};
+  }
+  
+  .card-link {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the text color from the parent */
+    display: block; /* Make the link fill the entire container */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition */
+  }
+  
+  .card-link:hover {
+    transform: translateY(-5px); /* Move the card up slightly on hover */
+  }
