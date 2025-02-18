@@ -19,8 +19,8 @@ layout: null
   --footer-hover-col: {{ site.footer-hover-col | default: "#0085A1" }};
 
   /* common CSS variables */
-  --body-font: 'Lora', 'Times New Roman', serif;
-  --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --body-font: -apple-font, "Roboto", serif;;
+  --header-font: "Jersey 25", serif;
   --mid-col: #808080;
 }
 
@@ -32,7 +32,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: var(--text-col);
   position: relative;
   background-color: var(--page-col);
@@ -52,23 +52,30 @@ p {
   line-height: 1.5;
   margin: 1.875rem 0;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,h2 {
   font-family: var(--header-font);
   font-weight: 800;
   line-height: 1.1;
 }
+h3,h4,h5,h6 {
+  font-family: var(--body-font);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
 h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 h2 {
-  font-size: 1.875rem;
-}
-h3 {
   font-size: 1.5rem;
 }
-h4 {
-  font-size: 1.125rem;
+h3 {
+  font-size: 1.25rem;
 }
+h4 {
+  font-size: 1.25rem;
+}
+
 h1, h2, h3, h4 {
   margin-top: 1.25rem;
 }
@@ -1122,4 +1129,21 @@ pre {
   #nav-search-text {
     display: inline-block;
   }
+}
+
+/* TO BE MOVED TO A CUSTOM CSS FILE: HASIME */
+.card {
+  border-radius: 40px;
+  background-color: {{ site.navbar-col }};
+}
+
+.card-link {
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Inherit the text color from the parent */
+  display: block; /* Make the link fill the entire container */
+  transition: transform 0.2s ease-in-out; /* Add a smooth transition */
+}
+
+.card-link:hover {
+  transform: translateY(-5px); /* Move the card up slightly on hover */
 }
