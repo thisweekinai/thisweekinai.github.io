@@ -24,8 +24,8 @@ navbar-links:
   Resources: "resources"
   # Resources:
   #   - AI School: "https://events.ycombinator.com/ai-sus"
-
-  Newsletter: "https://thisweekinai.substack.com"
+  Events: "events"
+  Newsletter: "https://thisweekinaiclub.substack.com"
 
 ################
 # --- Logo --- #
@@ -151,6 +151,7 @@ text-col: "#404040"
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
 #  - "/assets/js/custom-script.js"
+
 
 #################################
 # --- Web Analytics Section --- #
