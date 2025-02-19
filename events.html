@@ -1,6 +1,44 @@
 ---
 layout: page
 title: Events
-subtitle: Join our events to meed likeminded people.
-
+subtitle: Join our events to meet like-minded people.
 ---
+  <div class="events-container">
+    <aside class="join-us">
+      <h2>AI Transformation & Augmentation Workshops - Beginner Level</h2>
+      <p>As AI continues to reshape industries, professionals across various domains must understand how to leverage its capabilities to stay competitive. <br><br> 
+        This workshop is designed for college students, non-technical corporate employees, senior executives, and professionals from diverse fields who 
+        want to gain a practical, hands-on understanding of AI—without needing a technical background!</p>
+      <a href="https://forms.gle/4osuSG6jSMjYHP1u5" class="button">Interested? Register Here</a>
+    </aside>
+  
+    <section class="upcoming-events">
+      <h2>Upcoming Events</h2>
+      <table class="events-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Registration</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for event in site.data.events %}
+            <tr>
+              <td>{{ event.title }}</td>
+              <td>{{ event.date }}</td>
+              <td>{{ event.description }}</td>
+              <td>
+                {% if event.link %}
+                  <a href="{{ event.link }}" class="button">Register</a>
+                {% else %}
+                  TBA
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </div>

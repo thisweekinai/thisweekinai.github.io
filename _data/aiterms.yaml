@@ -1,0 +1,71 @@
+- name: Artificial Intelligence (AI)
+  definition: AI is when computers try to think like humans.
+  eli5: Imagine a robot that can learn, talk, and make decisions—just like a person!
+
+- name: Machine Learning (ML)
+  definition: A type of AI where computers learn from experience.
+  eli5: Think of how you learn to ride a bike. The more you practice, the better you get!
+
+- name: Deep Learning
+  definition: A subset of machine learning that uses neural networks with many layers.
+  eli5: Deep learning algorithms can learn complex patterns and representations from large amounts of data.
+
+- name: Neural Networks
+  definition: A type of machine learning algorithm that is inspired by the structure and function of the human brain.
+  eli5: Neural networks are composed of interconnected nodes or neurons that process and transmit information.  
+
+- name: Natural Language Processing (NLP)
+  definition: A field of artificial intelligence that focuses on enabling computers to understand, interpret, and generate human language.
+  eli5: NLP is used in applications like chatbots, language translation, and sentiment analysis.
+
+- name: Large Language Models (LLMs)
+  definition: A type of artificial intelligence model that is trained on a massive amount of text data.
+  eli5: LLMs can generate human-like text, answer questions, and perform a wide range of language-related tasks.
+
+- name: Training Data
+  definition: Data that is used to train machine learning models.
+  eli5: Training data is used to teach the model how to recognize patterns and make predictions.
+
+- name: Bias in AI
+  definition: The tendency of AI systems to produce biased results due to their inherent biases.
+  eli5: Bias in AI can manifest in various ways, such as biased algorithms, biased data, or biased models.
+
+- name: Computer Vision
+  definition: A field of artificial intelligence that focuses on enabling computers to understand and interpret visual data.
+  eli5: Computer vision is used in applications like facial recognition, object detection, and image segmentation.
+
+- name: Chatbots
+  definition: An artificial intelligence system that can engage in conversation with humans.
+  eli5: Chatbots can answer questions, provide information, and even have a conversation with users.
+
+- name: Reinforcement Learning
+  definition: A type of machine learning where an agent learns to make decisions by interacting with its environment.
+  eli5: Reinforcement learning is used in applications like game playing, robotics, and autonomous vehicles.
+
+- name: Generative AI
+  definition: A type of AI that can create new content, such as images, music, or text.
+  eli5: Generative AI is used in applications like content creation, virtual assistants, and creative writing.
+
+- name: Overfitting
+  definition: The phenomenon where a model performs well on the training data but poorly on new, unseen data.
+  eli5: Overfitting can occur when a model is too complex and captures noise in the training data, leading to poor performance on new data.
+
+- name: Underfitting
+  definition: The phenomenon where a model performs poorly on both the training data and new, unseen data.  
+  eli5: Underfitting can occur when a model is too simple and fails to capture the underlying patterns in the data, leading to poor performance on new data.
+
+- name: Transfer Learning
+  definition: A technique in machine learning where a pre-trained model is fine-tuned on a new dataset.
+  eli5: Transfer learning can save time and resources by leveraging the knowledge gained from a pre-trained model on a related task.
+
+- name: Meta-Learning
+  definition: A technique in machine learning where a model learns to learn from its own experience.
+  eli5: Meta-learning can enable models to adapt and improve their performance over time without being explicitly programmed.
+
+- name: Explainable AI
+  definition: A field of artificial intelligence that focuses on making AI systems more transparent and interpretable.
+  eli5: Explainable AI aims to provide insights into how AI systems make decisions or predictions, making it easier to understand and trust.
+
+- name: Ethical Considerations
+  definition: The set of principles and guidelines that guide the development and use of AI systems.
+  eli5: Ethical considerations are important in AI development to ensure that AI systems are fair, transparent, and accountable.

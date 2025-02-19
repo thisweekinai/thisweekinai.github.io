@@ -8,27 +8,20 @@ subtitle: Swipe to learn AI concepts
 
 <div class="tinder-container">
   <div class="tinder-cards" id="tinder-cards">
-    {% assign terms = "Artificial Intelligence (AI),Machine Learning (ML),Deep Learning,Neural Networks,Natural Language Processing (NLP),Large Language Models (LLMs),Training Data,Bias in AI,Computer Vision,Chatbots,Reinforcement Learning,Generative AI,Overfitting,Underfitting" | split: "," %}
-    
-    {% for term in terms reversed %}
-    <div class="tinder-card" data-term="{{ term | strip }}">
+   
+    {% for item in site.data.aiterms %}
+    <div class="tinder-card" data-term="{{ item.name }}">
       <div class="card-content">
-        <h3>{{ term | strip }}</h3>
+        <h3>{{ item.name | strip }}</h3>
         <div class="card-description">
           <p class="definition">
             <p>Meaning</p>
-            {% case term | strip %}
-            {% when 'Artificial Intelligence (AI)' %}AI is when computers try to think like humans.
-            {% when 'Machine Learning (ML)' %}A type of AI where computers learn from experience.
-            <!-- Add other cases here -->
-          {% endcase %}</p>
+            {{ item.definition }}
+          </p>
           <p class="eli5">
             <p>ELI5:</p>
-            {% case term | strip %}
-            {% when 'Artificial Intelligence (AI)' %}Imagine a robot that can learn, talk, and make decisions—just like a person!
-            {% when 'Machine Learning (ML)' %}Think of how you learn to ride a bike. The more you practice, the better you get!
-            <!-- Add other cases here -->
-          {% endcase %}</p>
+            {{ item.eli5 }}
+          </p>
         </div>
       </div>
       <div class="swipe-hint">

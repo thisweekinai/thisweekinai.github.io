@@ -4,13 +4,21 @@ title: Resources
 subtitle: Resources around AI
 ---
 
-My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for resource in site.data.resources %}
+    <tr>
+      <td><a href="{{ resources.url }}">{{ resource.title }}</a></td>
+      <td>{{ resource.description }}</td>
+      <td>{{ resource.tags }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

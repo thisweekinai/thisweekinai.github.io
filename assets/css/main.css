@@ -127,3 +127,49 @@ layout: null
   transform: translateX(1000px) rotate(30deg);
   opacity: 0;
 }
+
+
+---
+---
+
+.events-container {
+  display: flex;
+  flex-direction: column; /* Stack on smaller screens */
+  align-items: stretch; /* Full width items */
+}
+
+.join-us {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.upcoming-events {
+  width: 100%;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.events-table th, .events-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.events-table th {
+  background-color: #f2f2f2;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}

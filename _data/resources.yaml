@@ -1,0 +1,18 @@
+- title: Icon
+  url: https://icon.me/
+  description: AI Ad Maker
+  tags: marketing
+
+- title: Artificial Analysis
+  url: https://artificialanalysis.ai/
+  description: Website that independently analyszes the top LLM models, their AIs, and their performance across various benchmarks. This website can help you with the selection of the best LLM Model for your use case.
+  tags: consulting
+
+- title: Semi Analysis
+  url: https://semianalysis.com/
+  description: SemiAnalysis is an independent research and analysis company specializing in the Semiconductor and AI industries. Our in-depth coverage spans the entire supply chain, from semiconductor fabrication essentials to cutting-edge AI Models, software, and infrastructure for them.
+  tags: consulting
+- title: Prompt Engineering Tutorial – Master ChatGPT and LLM Responses
+  url: https://www.youtube.com/watch?v=_ZvnD73m40o&ab_channel=freeCodeCamp.org
+  description: A tutorial on how to use ChatGPT and LLMs to generate responses.
+  tags: learning
